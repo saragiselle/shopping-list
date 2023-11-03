@@ -31,8 +31,8 @@
     </ul>
 
     <script>
-        const unlisted = document.querySelector('ul');
-        const toinput = document.querySelector('input');
+        const list = document.querySelector('ul');
+        const input = document.querySelector('input');
         const btn = document.querySelector('button');
 
         btn.addEventListener('click',() => {
@@ -50,10 +50,10 @@
         listItem.appendChild(listBtn);
         listBtn.textContent = 'Delete';
 
-        unlisted.appendChild(listItem);
+        list.appendChild(listItem);
 
         listBtn.addEventListener('click', () => {
-            unlisted.removeChild(listItem);
+            list.removeChild(listItem);
         })
 
 
